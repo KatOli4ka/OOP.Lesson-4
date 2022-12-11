@@ -1,6 +1,6 @@
 package transport;
 
-public class Bus extends Car{
+public class Bus extends Transport {
     public Bus(String model, String brand, double engineVolume) {
         super(model, brand, engineVolume);
     }
@@ -28,5 +28,19 @@ public class Bus extends Car{
     @Override
     public String toString() {
         return super.toString();
+    }
+
+    @Override
+    public void pitStop() {
+        System.out.println("Автобус ушел на пит-стоп");
+    }
+    @Override
+    public double bestTime() {
+        return Math.random()*15;
+    }
+
+    @Override
+    public int maxSpeed() {
+        return (int) (Math.random()*100);
     }
 }
