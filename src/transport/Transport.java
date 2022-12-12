@@ -3,7 +3,6 @@ package transport;
 import java.util.Objects;
 
 public abstract class Transport implements Competing{
-    private String[] pitStop=new String[5];
     private String brand;
     private String model;
     private double engineVolume;
